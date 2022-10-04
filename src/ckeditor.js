@@ -163,6 +163,9 @@ Editor.defaultConfig = {
       "resizeImage:50",
       "resizeImage:75",
       "resizeImage:original",
+      "alignImage:left",
+      "alignImage:center",
+      "alignImage:right",
     ],
     resizeOptions: [
       {
@@ -181,19 +184,19 @@ Editor.defaultConfig = {
         value: "200",
       },
       {
-        name: "resizeImage:original",
-        value: null,
-        icon: "original",
+        name: "alignImage:left",
+        label: "Left",
+        value: "left",
       },
       {
-        name: "resizeImage:50",
-        value: "50",
-        icon: "medium",
+        name: "alignImage:right",
+        label: "Right",
+        value: "right",
       },
       {
-        name: "resizeImage:75",
-        value: "75",
-        icon: "large",
+        name: "alignImage:center",
+        label: "Center",
+        value: "center",
       },
     ],
   },
