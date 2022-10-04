@@ -180,6 +180,21 @@ Editor.defaultConfig = {
         label: "200px",
         value: "200",
       },
+      {
+        name: "resizeImage:original",
+        value: null,
+        icon: "original",
+      },
+      {
+        name: "resizeImage:50",
+        value: "50",
+        icon: "medium",
+      },
+      {
+        name: "resizeImage:75",
+        value: "75",
+        icon: "large",
+      },
     ],
   },
   table: {
@@ -192,15 +207,13 @@ Editor.defaultConfig = {
   },
   link: {
     addTargetToExternalLinks: true,
-    decorators: [
-      {
-        mode: "manual",
-        label: "Downloadable",
-        attributes: {
-          download: "download",
-        },
+    decorators: {
+      mode: "manual",
+      label: "Downloadable",
+      attributes: {
+        download: "download",
       },
-    ],
+    },
     openInNewTab: {
       mode: "manual",
       label: "Open in a new tab",
